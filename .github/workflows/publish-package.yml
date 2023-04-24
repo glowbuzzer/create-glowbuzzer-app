@@ -22,9 +22,6 @@ jobs:
         steps:
             -   uses: actions/checkout@v1
 
-            -   name: Set package version
-                run: npm version ${{ inputs.version }} --no-git-tag-version
-
             -   name: Publish create-glowbuzzer-app
                 run: npm publish --tag ${{ inputs.tag }} --access ${{ inputs.access }}
                 env:

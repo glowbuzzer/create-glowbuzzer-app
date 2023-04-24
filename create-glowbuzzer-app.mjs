@@ -23,7 +23,7 @@ const answers = await inquirer.prompt(questions);
 const gbr= await fetch('https://raw.githubusercontent.com/glowbuzzer/gbr/master/package.json');
 const version= gbr.version;
 
-console.log(`Creating app using GBR version ${version} ... please wait`);
+console.log(`Creating project using GBR version ${version} ... please wait`);
 
 const templateRepo = noversion ? "glowbuzzer/gbr/template" : `glowbuzzer/gbr/template#v${version}`;
 
@@ -36,5 +36,5 @@ const versioned= await fetch(`https://raw.githubusercontent.com/glowbuzzer/gbr/v
 
 process_project(answers.projectName, version, versioned);
 
-console.log(`\nYour Glowbuzzer app has been created in '${answers.projectName}'\n`);
+console.log(`\nYour Glowbuzzer React project has been created in '${answers.projectName}'\n`);
 console.log("To get started:\n    cd " + answers.projectName + "\n    npm install\n    npm start\n");

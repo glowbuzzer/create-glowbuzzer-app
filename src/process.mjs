@@ -31,6 +31,7 @@ export function process_project(name, gbr_version, versioned_dependencies) {
 
     rmSync(vite_config);
     rmSync(ts_config);
+    rmSync(project_file("dependencies.json"));
 
     renameSync(project_file("vite.config.src.ts"), vite_config);
     renameSync(project_file("tsconfig.src.json"), ts_config);

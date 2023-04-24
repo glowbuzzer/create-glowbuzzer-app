@@ -1,0 +1,30 @@
+name: gbr-release
+
+on:
+    push:
+        branches:
+            - main
+
+jobs:
+    release-please:
+        runs-on: ubuntu-22.04
+        outputs:
+            release_created: ${{ steps.release.outputs.release_created }}
+            version: ${{ steps.release.outputs.major }}.${{ steps.release.outputs.minor }}.${{ steps.release.outputs.patch }}
+        steps:
+            -   uses: google-github-actions/release-please-action@v3
+                id: release
+                with:
+                    release-type: node
+                    package-name: gbr
+                    changelog-types: '[ { "type": "feat", "section": "Feature" }, { "type": "fix", "section": "Bug Fix" }, { "type": "docs", "section": "Documentation" }, { "type": "enh", "section": "Enhancement" }, { "type": "chore", "section": "Chore" } ]'
+
+    publish-npm-package:
+        needs: release-please
+        if: ${{ needs.release-please.outputs.release_created }}
+        uses: ./.github/workflows/publish-package.yml
+        with:
+            tag: latest
+            version: ${{ needs.release-please.outputs.version }}
+            access: public
+        secrets: inherit

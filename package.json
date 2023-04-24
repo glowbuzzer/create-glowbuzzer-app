@@ -1,14 +1,13 @@
 {
   "name": "create-glowbuzzer-app",
   "version": "1.0.0",
-  "description": "Template a new Glowbuzzer React App using Vite",
+  "description": "Create a new Glowbuzzer React App using Vite",
   "bin": "./create-glowbuzzer-app.mjs",
+  "homepage": "https://github.com/glowbuzzer/create-glowbuzzer-app",
   "engines": {
     "node": ">=16"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "degit": "^2.8.4",
     "inquirer": "^9.1.5"

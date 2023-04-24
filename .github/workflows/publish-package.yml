@@ -1,0 +1,31 @@
+name: Publish npm packages
+on:
+    workflow_call:
+        inputs:
+            tag:
+                # npm tag (latest/next/beta/etc) to use
+                required: true
+                type: string
+            version:
+                # npm version
+                required: true
+                type: string
+            access:
+                # type of access 'restricted' or 'public'
+                required: false
+                type: string
+                default: restricted
+
+jobs:
+    publish:
+        runs-on: ubuntu-22.04
+        steps:
+            -   uses: actions/checkout@v1
+
+            -   name: Set package version
+                run: npm version ${{ inputs.version }} --no-git-tag-version
+
+            -   name: Publish create-glowbuzzer-app
+                run: npm publish --tag ${{ inputs.tag }} --access ${{ inputs.access }}
+                env:
+                    NPM_TOKEN: ${{ secrets.NPM_TOKEN }}

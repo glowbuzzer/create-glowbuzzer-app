@@ -1,0 +1,19 @@
+{
+  "name": "create-glowbuzzer-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "create-glowbuzzer-app.mjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "engines": {
+    "node": ">=16"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "degit": "^2.8.4",
+    "inquirer": "^9.1.5"
+  }
+}

@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.2](https://github.com/glowbuzzer/create-glowbuzzer-app/compare/v1.0.1...v1.0.2) (2023-04-24)
+
+
+### Bug Fix
+
+* remove npm version step (release-please does it for us) ([49dd937](https://github.com/glowbuzzer/create-glowbuzzer-app/commit/49dd937ca62e3fc2f9954057648577233291d864))
+
 ## [1.0.1](https://github.com/glowbuzzer/create-glowbuzzer-app/compare/v1.0.0...v1.0.1) (2023-04-24)
 
 

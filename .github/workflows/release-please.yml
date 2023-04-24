@@ -1,4 +1,4 @@
-name: gbr-release
+name: Release Please
 
 on:
     push:

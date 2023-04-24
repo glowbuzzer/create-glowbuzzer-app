@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+
 import degit from 'degit';
 import inquirer from "inquirer";
 import {fetch} from "./src/fetch.mjs"

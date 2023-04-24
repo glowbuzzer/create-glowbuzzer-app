@@ -1,11 +1,8 @@
 {
   "name": "create-glowbuzzer-app",
   "version": "1.0.0",
-  "description": "",
-  "main": "create-glowbuzzer-app.mjs",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "description": "Template a new Glowbuzzer React App using Vite",
+  "bin": "./create-glowbuzzer-app.mjs",
   "engines": {
     "node": ">=16"
   },

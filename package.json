@@ -6,7 +6,7 @@
   "bin": "./create-glowbuzzer-app.mjs",
   "repository": {
     "type": "git",
-    "url": "https://github.com/glowbuzzer/create-glowbuzzer-app.git",
+    "url": "https://github.com/glowbuzzer/create-glowbuzzer-app.git"
   },
   "bugs": {
     "url": "https://github.com/glowbuzzer/create-glowbuzzer-app/issues"

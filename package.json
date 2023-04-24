@@ -1,6 +1,6 @@
 {
   "name": "create-glowbuzzer-app",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "private": false,
   "description": "Create a new Glowbuzzer React App using Vite",
   "bin": "./create-glowbuzzer-app.mjs",

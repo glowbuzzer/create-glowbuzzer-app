@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.3](https://github.com/glowbuzzer/create-glowbuzzer-app/compare/v1.0.2...v1.0.3) (2023-04-24)
+
+
+### Bug Fix
+
+* add .npmrc ([9bfacc0](https://github.com/glowbuzzer/create-glowbuzzer-app/commit/9bfacc0c74df0098f3ed45740dcfe5795a0b9d04))
+
 ## [1.0.2](https://github.com/glowbuzzer/create-glowbuzzer-app/compare/v1.0.1...v1.0.2) (2023-04-24)
 
 

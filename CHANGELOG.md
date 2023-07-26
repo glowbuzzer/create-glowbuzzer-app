@@ -1,5 +1,23 @@
 # Changelog
 
+## [1.1.0](https://github.com/glowbuzzer/create-glowbuzzer-app/compare/v1.0.4...v1.1.0) (2023-07-26)
+
+
+### Feature
+
+* add --force overwrite option ([59aaf47](https://github.com/glowbuzzer/create-glowbuzzer-app/commit/59aaf47575d74112267ecaa0b6ef2b7d48a2bf17))
+
+
+### Bug Fix
+
+* don't overwrite existing projects ([0fb5fb9](https://github.com/glowbuzzer/create-glowbuzzer-app/commit/0fb5fb98c5a8931f8ad26026b715899de1e9760d))
+* fix --noversion issue ([59aaf47](https://github.com/glowbuzzer/create-glowbuzzer-app/commit/59aaf47575d74112267ecaa0b6ef2b7d48a2bf17))
+
+
+### Chore
+
+* change to jsdelivr ([0fb5fb9](https://github.com/glowbuzzer/create-glowbuzzer-app/commit/0fb5fb98c5a8931f8ad26026b715899de1e9760d))
+
 ## [1.0.4](https://github.com/glowbuzzer/create-glowbuzzer-app/compare/v1.0.3...v1.0.4) (2023-04-24)
 
 

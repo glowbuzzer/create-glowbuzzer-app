@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.0.4](https://github.com/glowbuzzer/create-glowbuzzer-app/compare/v1.0.3...v1.0.4) (2023-04-24)
+
+
+### Bug Fix
+
+* fix json ([4716a30](https://github.com/glowbuzzer/create-glowbuzzer-app/commit/4716a305480ef4912813c2961fcf27c2c9140bf1))
+* make not private ([36a203a](https://github.com/glowbuzzer/create-glowbuzzer-app/commit/36a203a24ee44c399bce2582e688f0868eb7e4e3))
+
 ## [1.0.3](https://github.com/glowbuzzer/create-glowbuzzer-app/compare/v1.0.2...v1.0.3) (2023-04-24)
 
 

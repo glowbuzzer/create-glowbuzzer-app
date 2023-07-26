@@ -6,8 +6,12 @@ import inquirer from "inquirer";
 import {process_project} from "./src/process.mjs";
 import axios from "axios";
 
-const [, , arg] = process.argv;
-const noversion = arg === "--noversion";
+const [, , ...args] = process.argv;
+const noversion = args.includes("--noversion");
+const force = args.includes("--force");
+
+noversion && console.log("Using latest development version of GBR");
+force && console.log("Force overwrite existing project enabled");
 
 function make_url(version) {
     return `https://cdn.jsdelivr.net/gh/glowbuzzer/gbr@${version}/package.json`;
@@ -25,7 +29,7 @@ const questions = [
 const answers = await inquirer.prompt(questions);
 
 // don't overwrite an existing project
-if (existsSync(answers.projectName)) {
+if (existsSync(answers.projectName) && !force) {
     console.log("Error: directory '" + answers.projectName + "' already exists");
     process.exit(1)
 }
@@ -42,12 +46,11 @@ async function fetch(url) {
 
 try {
     // fetch package.json from gbr repository in order to determine current release version
-    const gbr = await fetch(make_url("master"));
-    const version = gbr.version;
+    const version=noversion ? "main" : "v"+(await fetch(make_url("main"))).version
 
-    console.log(`Creating project using GBR version ${version} ... please wait`);
+    console.log(`Creating project using GBR version '${version}' ... please wait`);
 
-    const templateRepo = noversion ? "glowbuzzer/gbr/template" : `glowbuzzer/gbr/template#v${version}`;
+    const templateRepo = `glowbuzzer/gbr/template#${version}`;
 
     console.log("- Fetching GBR template");
     const emitter = degit(templateRepo, {cache: false, force: true});

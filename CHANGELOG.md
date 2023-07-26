@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.1](https://github.com/glowbuzzer/create-glowbuzzer-app/compare/v1.1.0...v1.1.1) (2023-07-26)
+
+
+### Bug Fix
+
+* fix issue with version handling ([035b7a3](https://github.com/glowbuzzer/create-glowbuzzer-app/commit/035b7a3100ac880d076087a6195b7e16de993a88))
+
 ## [1.1.0](https://github.com/glowbuzzer/create-glowbuzzer-app/compare/v1.0.4...v1.1.0) (2023-07-26)
 
 

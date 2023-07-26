@@ -17,6 +17,7 @@
   "license": "MIT",
   "dependencies": {
     "degit": "^2.8.4",
-    "inquirer": "^9.1.5"
+    "inquirer": "^9.1.5",
+    "axios": "^1.4.0"
   }
 }
